@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Ludopoly</string>
+    <string name="tagline">Gulir Dadu, Kuasai Papan!</string>
+
+    <!-- Login -->
+    <string name="welcome_back">Selamat Datang Kembali!</string>
+    <string name="login_subtitle">Masuk untuk melanjutkan petualangan dadumu</string>
+    <string name="email_hint">Alamat Email</string>
+    <string name="password_hint">Kata Sandi</string>
+    <string name="forgot_password">Lupa Kata Sandi?</string>
+    <string name="btn_login">MASUK SEKARANG</string>
+    <string name="no_account">Belum punya akun? </string>
+    <string name="register_here">Daftar di sini</string>
+
+    <!-- Register -->
+    <string name="create_account">Buat Akun Baru</string>
+    <string name="register_subtitle">Gabung ke dunia Ludopoly sekarang juga</string>
+    <string name="name_hint">Nama Lengkap / Username</string>
+    <string name="confirm_password_hint">Ulangi Kata Sandi</string>
+    <string name="btn_register">DAFTAR AKUN</string>
+    <string name="have_account">Sudah punya akun? </string>
+    <string name="login_here">Masuk di sini</string>
+
+    <!-- Forgot Password -->
+    <string name="reset_password_title">Reset Kata Sandi</string>
+    <string name="reset_password_desc">Masukkan email yang terdaftar. Kami akan mengirimkan tautan untuk mengatur ulang kata sandi Anda.</string>
+    <string name="btn_send_reset">KIRIM LINK RESET</string>
+    <string name="back_to_login">Kembali ke Halaman Masuk</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_title">Ludopoly Arena</string>
+    <string name="welcome_player">Halo, Pemain!</string>
+    <string name="btn_play_game">Mulai Permainan</string>
+    <string name="btn_logout">Keluar Akun</string>
+</resources>

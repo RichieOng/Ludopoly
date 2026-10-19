@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "532466097339",
+    "project_id": "ludopoly-6e553",
+    "storage_bucket": "ludopoly-6e553.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:532466097339:android:1c2ef0bd1762f6810d9d9e",
+        "android_client_info": {
+          "package_name": "com.ludopoly.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAYflvjPQ4DbOW0N2-HudR42hXKr_rGcM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Top Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_input"
+                android:contentDescription="Kembali"
+                android:src="@drawable/ic_logout"
+                android:rotation="180"
+                app:tint="@color/text_white" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:text="Dadu Digital LudoPoly"
+                android:textColor="@color/gold_accent"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Dice Container Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/bg_card"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="32dp">
+
+            <ImageView
+                android:id="@+id/ivDice"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:contentDescription="Dadu Digital"
+                android:src="@drawable/ic_dice_6" />
+
+            <TextView
+                android:id="@+id/tvDiceResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Siap Melempar Dadu!"
+                android:textColor="@color/text_white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDiceInstruction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Tekan tombol di bawah untuk mengocok dadu digital"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp" />
+
+            <!-- Roll Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnRollDice"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/bg_button"
+                android:letterSpacing="0.06"
+                android:text="🎲  KOCOK DADU SEKARANG"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Rules Info Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📜 Aturan Lemparan Dadu Nusantara"
+                android:textColor="@color/gold_accent"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="3dp"
+                android:text="• Angka 6: Mengizinkan pemain mengeluarkan pion baru dari Rumah Adat (Pangkalan) ke jalur keliling pulau, serta berhak 1x lemparan bonus.\n• Angka 1-5: Pion melangkah maju mengelilingi sirkuit kota Nusantara sesuai jumlah angka yang keluar."
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp" />
+
+            <!-- History -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Riwayat Lemparan:"
+                android:textColor="@color/purple_light"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDiceHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Belum ada lemparan dadu."
+                android:textColor="@color/text_white"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

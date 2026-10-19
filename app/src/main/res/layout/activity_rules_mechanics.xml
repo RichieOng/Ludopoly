@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Top Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_input"
+                android:contentDescription="Kembali"
+                android:src="@drawable/ic_logout"
+                android:rotation="180"
+                app:tint="@color/text_white" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:text="Blackhole &amp; Kemenangan"
+                android:textColor="@color/gold_accent"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="Pelajari mekanik unik LudoPoly: jebakan Blackhole, sistem menangkap pion lawan ala Ludo, serta aturan penentuan juara."
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp" />
+
+        <!-- 1. BLACKHOLE -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:contentDescription="Blackhole"
+                    android:src="@drawable/ic_blackhole" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:text="1. Zona Blackhole (Teleportasi)"
+                    android:textColor="@color/gold_accent"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="3dp"
+                android:text="Petak misterius di persimpangan selat antarpulau. Jika pion mendarat tepat di petak Blackhole, pion akan tersedot dan dilemparkan secara acak ke pulau lain di Nusantara!"
+                android:textColor="@color/text_white"
+                android:textSize="13sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSimulateBlackhole"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_badge"
+                android:text="🌀 SIMULASI TERKENA BLACKHOLE"
+                android:textAllCaps="true"
+                android:textColor="@color/purple_light"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- 2. PION TERTANGKAP -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:contentDescription="Pion"
+                    android:src="@drawable/ic_dice" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:text="2. Sistem Pion Tertangkap"
+                    android:textColor="@color/gold_accent"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="3dp"
+                android:text="Mengadopsi aturan klasik Ludo: jika pion Anda mendarat di petak non-aman yang sudah ditempati pion lawan, pion lawan tersebut TERTANGKAP dan wajib pulang kembali ke pangkalan Rumah Adatnya. Anda berhak mendapatkan 1x kocokan dadu ekstra!"
+                android:textColor="@color/text_white"
+                android:textSize="13sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSimulateCapture"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_badge"
+                android:text="⚔️ SIMULASI TANGKAP PION LAWAN"
+                android:textAllCaps="true"
+                android:textColor="@color/gold_accent"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- 3. SISTEM KEMENANGAN -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:contentDescription="Trophy"
+                    android:src="@drawable/ic_trophy" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:text="3. Syarat Kemenangan (Juara)"
+                    android:textColor="@color/gold_accent"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="4dp"
+                android:text="Permainan LudoPoly berakhir dan menentukan pemenang melalui 3 kondisi berikut:\n\n🏆 1. Monopoli Kepulauan: Pemain pertama yang berhasil memiliki seluruh kota di satu pulau besar.\n\n🏁 2. Finis Nusantara: Pemain yang berhasil membawa seluruh pionnya sampai ke Pusat Nusantara (IKN).\n\n💰 3. Kekayaan Maksimal: Pemain dengan akumulasi saldo koin dan nilai aset properti kota tertinggi saat batas ronde selesai."
+                android:textColor="@color/text_white"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

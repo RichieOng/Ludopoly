@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="board_card">#1E293B</color>
+    <color name="board_card_border">#334155</color>
+    <color name="board_dark">#0F172A</color>
+    <color name="board_input_bg">#0F172A</color>
+    <color name="color_danger">#EF4444</color>
+    <color name="color_success">#10B981</color>
+    <color name="gold_accent">#F59E0B</color>
+    <color name="gold_accent_light">#FCD34D</color>
+    <color name="purple_light">#818CF8</color>
+    <color name="purple_primary">#4F46E5</color>
+    <color name="purple_primary_dark">#3730A3</color>
+    <color name="text_secondary">#94A3B8</color>
+    <color name="text_white">#F8FAFC</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Ludopoly</string>
+    <string name="back_to_login">Kembali ke Halaman Masuk</string>
+    <string name="btn_login">MASUK SEKARANG</string>
+    <string name="btn_logout">Keluar Akun</string>
+    <string name="btn_play_game">Mulai Permainan</string>
+    <string name="btn_register">DAFTAR AKUN</string>
+    <string name="btn_send_reset">KIRIM LINK RESET</string>
+    <string name="confirm_password_hint">Ulangi Kata Sandi</string>
+    <string name="create_account">Buat Akun Baru</string>
+    <string name="dashboard_title">Ludopoly Arena</string>
+    <string name="email_hint">Alamat Email</string>
+    <string name="forgot_password">Lupa Kata Sandi?</string>
+    <string name="gcm_defaultSenderId" translatable="false">532466097339</string>
+    <string name="google_api_key" translatable="false">AIzaSyDAYflvjPQ4DbOW0N2-HudR42hXKr_rGcM</string>
+    <string name="google_app_id" translatable="false">1:532466097339:android:1c2ef0bd1762f6810d9d9e</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDAYflvjPQ4DbOW0N2-HudR42hXKr_rGcM</string>
+    <string name="google_storage_bucket" translatable="false">ludopoly-6e553.firebasestorage.app</string>
+    <string name="have_account">Sudah punya akun? </string>
+    <string name="login_here">Masuk di sini</string>
+    <string name="login_subtitle">Masuk untuk melanjutkan petualangan dadumu</string>
+    <string name="name_hint">Nama Lengkap / Username</string>
+    <string name="no_account">Belum punya akun? </string>
+    <string name="password_hint">Kata Sandi</string>
+    <string name="project_id" translatable="false">ludopoly-6e553</string>
+    <string name="register_here">Daftar di sini</string>
+    <string name="register_subtitle">Gabung ke dunia Ludopoly sekarang juga</string>
+    <string name="reset_password_desc">Masukkan email yang terdaftar. Kami akan mengirimkan tautan untuk mengatur ulang kata sandi Anda.</string>
+    <string name="reset_password_title">Reset Kata Sandi</string>
+    <string name="tagline">Gulir Dadu, Kuasai Papan!</string>
+    <string name="welcome_back">Selamat Datang Kembali!</string>
+    <string name="welcome_player">Halo, Pemain!</string>
+    <style name="Theme.Ludopoly" parent="Theme.Material3.Dark.NoActionBar">
+        
+        <item name="colorPrimary">@color/purple_primary</item>
+        <item name="colorPrimaryVariant">@color/purple_primary_dark</item>
+        <item name="colorSecondary">@color/gold_accent</item>
+        <item name="android:statusBarColor">@color/board_dark</item>
+        <item name="android:navigationBarColor">@color/board_dark</item>
+        <item name="android:windowBackground">@color/board_dark</item>
+    </style>
+</resources>

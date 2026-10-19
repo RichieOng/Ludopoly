@@ -1,0 +1,190 @@
+[
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\drawable_bg_gradient.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\drawable\\bg_gradient.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\drawable_bg_badge.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\drawable\\bg_badge.xml"
+    },
+    {
+        "merged": "com.ludopoly.app-debug-5:/layout_item_room_card.xml.flat",
+        "source": "com.ludopoly.app-main-7:/layout/item_room_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\layout_activity_rules_mechanics.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\layout\\activity_rules_mechanics.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\drawable_ic_dice.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\drawable\\ic_dice.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\drawable_ic_blackhole.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\drawable\\ic_blackhole.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\drawable_ic_nfc.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\drawable\\ic_nfc.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\drawable_ic_coin.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\drawable\\ic_coin.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\drawable_ic_dice_5.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\drawable\\ic_dice_5.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\drawable_bg_button_secondary.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\drawable\\bg_button_secondary.xml"
+    },
+    {
+        "merged": "com.ludopoly.app-debug-5:/layout_item_player_slot.xml.flat",
+        "source": "com.ludopoly.app-main-7:/layout/item_player_slot.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\layout_activity_islands.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\layout\\activity_islands.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\drawable_ic_dice_4.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\drawable\\ic_dice_4.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\layout_activity_nfc_city.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\layout\\activity_nfc_city.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\layout_activity_digital_dice.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\layout\\activity_digital_dice.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\drawable_ic_island.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\drawable\\ic_island.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\layout_activity_forgot_password.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\layout\\activity_forgot_password.xml"
+    },
+    {
+        "merged": "com.ludopoly.app-debug-5:/drawable_ic_copy.xml.flat",
+        "source": "com.ludopoly.app-main-7:/drawable/ic_copy.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\drawable_ic_person.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\drawable\\ic_person.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\drawable_ic_dice_2.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\drawable\\ic_dice_2.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\drawable_ic_lock.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\drawable\\ic_lock.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\drawable_ic_logout.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\drawable\\ic_logout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\drawable_bg_card.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\drawable\\bg_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\drawable_ic_dice_6.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\drawable\\ic_dice_6.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\drawable_bg_button.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\drawable\\bg_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\drawable_bg_input.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\drawable\\bg_input.xml"
+    },
+    {
+        "merged": "com.ludopoly.app-debug-5:/drawable_ic_users.xml.flat",
+        "source": "com.ludopoly.app-main-7:/drawable/ic_users.xml"
+    },
+    {
+        "merged": "com.ludopoly.app-debug-5:/layout_dialog_create_room.xml.flat",
+        "source": "com.ludopoly.app-main-7:/layout/dialog_create_room.xml"
+    },
+    {
+        "merged": "com.ludopoly.app-debug-5:/drawable_ic_key.xml.flat",
+        "source": "com.ludopoly.app-main-7:/drawable/ic_key.xml"
+    },
+    {
+        "merged": "com.ludopoly.app-debug-5:/layout_dialog_join_room.xml.flat",
+        "source": "com.ludopoly.app-main-7:/layout/dialog_join_room.xml"
+    },
+    {
+        "merged": "com.ludopoly.app-debug-5:/layout_activity_room_list.xml.flat",
+        "source": "com.ludopoly.app-main-7:/layout/activity_room_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\layout_activity_game_arena.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\layout\\activity_game_arena.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\drawable_ic_quiz.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\drawable\\ic_quiz.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\layout_activity_quiz.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\layout\\activity_quiz.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\drawable_ic_dice_3.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\drawable\\ic_dice_3.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\layout_item_city_card.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\layout\\item_city_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\drawable_ic_email.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\drawable\\ic_email.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\drawable_ic_dice_1.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\drawable\\ic_dice_1.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\drawable_ic_trophy.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\drawable\\ic_trophy.xml"
+    },
+    {
+        "merged": "com.ludopoly.app-debug-5:/layout_activity_room_lobby.xml.flat",
+        "source": "com.ludopoly.app-main-7:/layout/activity_room_lobby.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-debug-5:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.ludopoly.app-debug-5:/drawable_ic_add.xml.flat",
+        "source": "com.ludopoly.app-main-7:/drawable/ic_add.xml"
+    }
+]

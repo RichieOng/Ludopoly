@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">532466097339</string>
+    <string name="google_api_key" translatable="false">AIzaSyDAYflvjPQ4DbOW0N2-HudR42hXKr_rGcM</string>
+    <string name="google_app_id" translatable="false">1:532466097339:android:1c2ef0bd1762f6810d9d9e</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDAYflvjPQ4DbOW0N2-HudR42hXKr_rGcM</string>
+    <string name="google_storage_bucket" translatable="false">ludopoly-6e553.firebasestorage.app</string>
+    <string name="project_id" translatable="false">ludopoly-6e553</string>
+</resources>

@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Ludopoly" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Customize your light/dark theme here. -->
+        <item name="colorPrimary">@color/purple_primary</item>
+        <item name="colorPrimaryVariant">@color/purple_primary_dark</item>
+        <item name="colorSecondary">@color/gold_accent</item>
+        <item name="android:statusBarColor">@color/board_dark</item>
+        <item name="android:navigationBarColor">@color/board_dark</item>
+        <item name="android:windowBackground">@color/board_dark</item>
+    </style>
+</resources>

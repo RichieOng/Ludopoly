@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "com.ludopoly.app-mergeDebugResources-4:/layout/item_room_card.xml",
+        "source": "com.ludopoly.app-main-7:/layout/item_room_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-mergeDebugResources-4:\\layout\\activity_islands.xml",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\layout\\activity_islands.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-mergeDebugResources-4:\\layout\\activity_forgot_password.xml",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\layout\\activity_forgot_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-mergeDebugResources-4:\\layout\\activity_splash.xml",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-mergeDebugResources-4:\\layout\\activity_rules_mechanics.xml",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\layout\\activity_rules_mechanics.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-mergeDebugResources-4:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "com.ludopoly.app-mergeDebugResources-4:/layout/dialog_create_room.xml",
+        "source": "com.ludopoly.app-main-7:/layout/dialog_create_room.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-mergeDebugResources-4:\\layout\\item_city_card.xml",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\layout\\item_city_card.xml"
+    },
+    {
+        "merged": "com.ludopoly.app-mergeDebugResources-4:/layout/activity_room_lobby.xml",
+        "source": "com.ludopoly.app-main-7:/layout/activity_room_lobby.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-mergeDebugResources-4:\\layout\\activity_register.xml",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "com.ludopoly.app-mergeDebugResources-4:/layout/dialog_join_room.xml",
+        "source": "com.ludopoly.app-main-7:/layout/dialog_join_room.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-mergeDebugResources-4:\\layout\\activity_digital_dice.xml",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\layout\\activity_digital_dice.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-mergeDebugResources-4:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-mergeDebugResources-4:\\layout\\activity_quiz.xml",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\layout\\activity_quiz.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-mergeDebugResources-4:\\layout\\activity_nfc_city.xml",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\layout\\activity_nfc_city.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-mergeDebugResources-4:\\layout\\activity_game_arena.xml",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.3.0\\com.ludopoly.app-main-7:\\layout\\activity_game_arena.xml"
+    },
+    {
+        "merged": "com.ludopoly.app-mergeDebugResources-4:/layout/item_player_slot.xml",
+        "source": "com.ludopoly.app-main-7:/layout/item_player_slot.xml"
+    },
+    {
+        "merged": "com.ludopoly.app-mergeDebugResources-4:/layout/activity_room_list.xml",
+        "source": "com.ludopoly.app-main-7:/layout/activity_room_list.xml"
+    }
+]
