@@ -1,56 +1,49 @@
-# Ludopoly - Board Game Budaya Nusantara (Android Studio & Firebase)
+LudoPoly – Board Game Nusantara
 
-Aplikasi Android **LudoPoly** — perpaduan permainan papan edukatif budaya Nusantara (Monopoli & Ludo), dilengkapi dengan Firebase Authentication, Cloud Firestore, sensor kartu NFC, kuis budaya, dan dadu digital.
+LudoPoly adalah aplikasi permainan papan digital yang menggabungkan konsep permainan Ludo dengan pengetahuan tentang budaya dan keberagaman Nusantara. Pemain dapat menjelajahi berbagai pulau di Indonesia, mengenal rumah adat, menjawab kuis pengetahuan, serta membeli kota melalui mekanisme permainan yang interaktif.
 
----
+1. Login
+- Input email dan password.
+- Tombol Login untuk masuk ke aplikasi.
+- Link menuju halaman Register.
+- Validasi input kosong dan kredensial pengguna.
 
-## 📁 Lokasi Proyek
-Direktori proyek:
-`C:\Users\Asus\.gemini\antigravity\scratch\ludopoly`
+2. Register
+- Input nama, email, password, dan konfirmasi password.
+- Validasi data sebelum pendaftaran.
+- Menyimpan akun secara lokal untuk kebutuhan prototipe.
 
----
+3. Halaman Utama
+- Menampilkan identitas game LudoPoly.
+- Tombol Play Game untuk memulai permainan.
+- Menu fitur aplikasi.
+- Menampilkan profil pemain dan saldo koin.
 
-## 🎮 Fitur-Fitur Utama Game LudoPoly
+4. List Fitur
+- Lima pulau dan rumah adat.
+- Dadu digital untuk menentukan langkah pemain.
+- Kuis Pengetahuan Nusantara.
+- Kartu NFC dan pembelian kota.
+- Blackhole sebagai elemen tantangan permainan.
+- Mekanisme pion tertangkap.
+- Sistem kemenangan untuk menentukan pemenang.
 
-### 1. Halaman Utama (Main Dashboard)
-- **Identitas Game LudoPoly**: Logo dadu, nama game, dan badge edisi Nusantara.
-- **Profil Pemain & Saldo Koin**: Avatar, nama pemain, email, level pemain, dan saldo koin LP (Ludopoly Coins) yang tersinkronisasi dengan Firebase.
-- **Tombol Play Game**: Membuka Arena Permainan LudoPoly.
-- **Menu Fitur**: Akses cepat ke 5 fitur utama permainan.
+5. Anggota Kelompok
+1. Richie Ong
+2. Nadine Valencia
+3. Cicero Jesvally Lim
+4. Angel Lie
 
-### 2. List 5 Fitur Permainan
-1. **Lima Pulau & Rumah Adat** (`IslandsActivity`):
-   - Eksplorasi 5 pulau besar Nusantara:
-     - **Sumatera**: Rumah Gadang (Minangkabau) & Kota Properti (Medan, Padang, Palembang).
-     - **Jawa**: Rumah Joglo & Kota Properti (Jakarta, Bandung, Yogyakarta, Surabaya).
-     - **Kalimantan**: Rumah Betang / Panjang (Dayak) & Kota Properti (Pontianak, Banjarmasin, Balikpapan).
-     - **Sulawesi**: Rumah Tongkonan (Toraja) & Kota Properti (Makassar, Manado, Palu).
-     - **Papua**: Rumah Honai & Kota Properti (Jayapura, Merauke, Sorong).
-2. **Dadu Digital** (`DigitalDiceActivity`):
-   - Animasi kocok dadu digital 1–6 dengan efek visual bergulir.
-   - Aturan lemparan: Angka 6 untuk mengeluarkan pion dari Rumah Adat atau mendapatkan lemparan dadu tambahan.
-   - Riwayat lemparan dadu interaktif.
-3. **Kuis Pengetahuan Nusantara** (`QuizActivity`):
-   - Kuis interaktif wawasan budaya, arsitektur rumah adat, dan sejarah kepulauan Indonesia.
-   - Menjawab dengan benar memberikan bonus saldo koin (+200 LP per soal) yang otomatis bertambah ke akun Firebase pemain.
-4. **Kartu NFC & Pembelian Kota** (`NfcCityActivity`):
-   - Integrasi sensor NFC ponsel untuk memindai kartu fisik properti kota.
-   - Dilengkapi tombol **Simulasi Tap NFC** untuk pengujian di emulator atau perangkat tanpa NFC.
-   - Sistem kepemilikan kota, harga beli, dan penarikan biaya sewa koin saat pemain lawan mendarat.
-5. **Blackhole, Pion Tertangkap & Sistem Kemenangan** (`RulesMechanicsActivity`):
-   - **Blackhole**: Petak pusaran misterius yang menteleportasi pion ke pulau lain secara acak.
-   - **Pion Tertangkap**: Mekanisme menginjak pion musuh agar kembali ke pangkalan Rumah Adat awal (+1x lemparan ekstra).
-   - **Sistem Kemenangan**: Kondisi juara melalui Monopoli Kepulauan, Pion Finis ke IKN, atau Saldo Koin Tertinggi.
-6. **Arena Permainan (Game Arena)** (`GameArenaActivity`):
-   - Sirkuit 20 petak antarpulau, pelacak putaran ronde, kocokan dadu langkah langsung, dan pencatat pertandingan (Game Log).
+6. Tujuan Aplikasi
+LudoPoly bertujuan menggabungkan hiburan dan edukasi melalui permainan papan digital, sehingga pemain dapat mengenal budaya Indonesia sambil menikmati pengalaman bermain yang interaktif.
 
----
+7. Teknologi
+- Android Studio
+- Kotlin
+- Firebase Authentication
+- Firebase Firestore
 
-## 🚀 Cara Menjalankan di Android Studio
+Catatan: Teknologi dan mekanisme penyimpanan akun disesuaikan dengan implementasi akhir aplikasi.
 
-1. Buka **Android Studio**.
-2. Pilih **Open** > arahkan ke direktori:
-   `C:\Users\Asus\.gemini\antigravity\scratch\ludopoly`
-3. Tunggu proses **Gradle Sync** selesai.
-4. Pastikan file konfigurasi `app/google-services.json` dari Firebase Console Anda sudah terpasang.
-5. Jalankan ke emulator atau HP Android fisik (klik tombol **Run**).
+8. Status Proyek
+LudoPoly dikembangkan sebagai proyek aplikasi permainan papan digital bertema edukasi budaya Nusantara.
