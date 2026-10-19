@@ -29,10 +29,10 @@ LudoPoly adalah aplikasi permainan papan digital yang menggabungkan konsep perma
 - Sistem kemenangan untuk menentukan pemenang.
 
 5. Anggota Kelompok
-1. Richie Ong
-2. Nadine Valencia
-3. Cicero Jesvally Lim
-4. Angel Lie
+- Richie Ong
+-  Nadine Valencia Cicero
+-  Jesvally Lim
+-  Angel Lie
 
 6. Tujuan Aplikasi
 LudoPoly bertujuan menggabungkan hiburan dan edukasi melalui permainan papan digital, sehingga pemain dapat mengenal budaya Indonesia sambil menikmati pengalaman bermain yang interaktif.
