@@ -3,30 +3,21 @@
 #include "secrets.h"
 #include <Firebase.h>
 
-// =====================================
-// LUDOPOLY NUSANTARA - FIREBASE
-// =====================================
-
+// Firebase Realtime Database
 Firebase fb(REFERENCE_URL);
 
+// Identitas perangkat
 String deviceID = "ESP32_LudoPoly";
 
+// Interval update status: 5 detik
 unsigned long waktuSebelumnya = 0;
-const unsigned long intervalUpdate = 5000;
+const unsigned long interval = 5000;
 
-// Deklarasi fungsi
+// Fungsi
 void hubungkanWiFi();
 void kirimDataAwal();
-void kirimDataPulau();
-void kirimDataPetakKhusus();
 void perbaruiStatus();
-void cekResponse(String nama, int kode);
-void setStringData(String path, String nilai);
-void setIntData(String path, int nilai);
-
-// =====================================
-// SETUP
-// =====================================
+void tampilkanHasil(String namaData, int responseCode);
 
 void setup() {
     Serial.begin(115200);
@@ -34,27 +25,19 @@ void setup() {
 
     Serial.println();
     Serial.println("==================================");
-    Serial.println("       LUDOPOLY NUSANTARA");
+    Serial.println("          LUDOPOLY IOT");
     Serial.println("==================================");
 
     hubungkanWiFi();
 
     if (WiFi.status() == WL_CONNECTED) {
         kirimDataAwal();
-        kirimDataPulau();
-        kirimDataPetakKhusus();
-
-        Serial.println();
-        Serial.println("Inisialisasi data LudoPoly selesai.");
-    } else {
-        Serial.println("WiFi belum terhubung.");
-        Serial.println("Data belum dikirim ke Firebase.");
     }
-}
 
-// =====================================
-// LOOP
-// =====================================
+    Serial.println();
+    Serial.println("Inisialisasi LudoPoly selesai.");
+    Serial.println("RFID/NFC belum dipasang.");
+}
 
 void loop() {
     if (WiFi.status() != WL_CONNECTED) {
@@ -64,15 +47,11 @@ void loop() {
         return;
     }
 
-    if (millis() - waktuSebelumnya >= intervalUpdate) {
+    if (millis() - waktuSebelumnya >= interval) {
         waktuSebelumnya = millis();
         perbaruiStatus();
     }
 }
-
-// =====================================
-// WIFI
-// =====================================
 
 void hubungkanWiFi() {
     WiFi.mode(WIFI_STA);
@@ -96,214 +75,89 @@ void hubungkanWiFi() {
         Serial.println(WiFi.localIP());
     } else {
         Serial.println("Gagal terhubung ke WiFi.");
+        Serial.println("Periksa SSID dan password.");
     }
 }
 
-// =====================================
-// DATA AWAL PERMAINAN
-// =====================================
-
 void kirimDataAwal() {
     Serial.println();
-    Serial.println("Mengirim data perangkat dan permainan...");
+    Serial.println("Mengirim data awal ke Firebase...");
 
-    setStringData("LudoPoly/IoT/deviceID", deviceID);
-    setStringData("LudoPoly/IoT/deviceStatus", "online");
-    setStringData("LudoPoly/IoT/rfidStatus", "belum_dipasang");
+    int responseCode;
 
-    setStringData("LudoPoly/Permainan/status", "belum_dimulai");
-    setIntData("LudoPoly/Permainan/jumlahPemain", 4);
-    setIntData("LudoPoly/Permainan/putaran", 1);
-    setIntData("LudoPoly/Permainan/giliranPemain", 1);
+    responseCode = fb.setString(
+        "LudoPoly/IoT/deviceID",
+        deviceID
+    );
+    tampilkanHasil("Device ID", responseCode);
 
-    setStringData(
-        "LudoPoly/Permainan/namaPermainan",
+    responseCode = fb.setString(
+        "LudoPoly/IoT/deviceStatus",
+        "online"
+    );
+    tampilkanHasil("Device Status", responseCode);
+
+    responseCode = fb.setString(
+        "LudoPoly/IoT/rfidStatus",
+        "belum_dipasang"
+    );
+    tampilkanHasil("RFID/NFC Status", responseCode);
+
+    responseCode = fb.setString(
+        "LudoPoly/PembelianKota/status",
+        "menunggu_kartu"
+    );
+    tampilkanHasil("Status Pembelian Kota", responseCode);
+
+    responseCode = fb.setInt(
+        "LudoPoly/Permainan/jumlahPemain",
+        4
+    );
+    tampilkanHasil("Jumlah Pemain", responseCode);
+
+    responseCode = fb.setInt(
+        "LudoPoly/Permainan/putaran",
+        1
+    );
+    tampilkanHasil("Putaran", responseCode);
+
+    responseCode = fb.setString(
+        "LudoPoly/Permainan/status",
+        "belum_dimulai"
+    );
+    tampilkanHasil("Status Permainan", responseCode);
+
+    responseCode = fb.setString(
+        "LudoPoly/Permainan/jenisPermainan",
         "LudoPoly Nusantara"
     );
-}
+    tampilkanHasil("Jenis Permainan", responseCode);
 
-// =====================================
-// DATA KOTA DAN PULAU
-// Harga disimpan dalam rupiah
-// =====================================
-
-void kirimDataPulau() {
     Serial.println();
-    Serial.println("Mengirim data pulau dan kota...");
-
-    // PULAU JAWA - RUMAH JOGLO
-    setStringData("LudoPoly/Kota/Jawa/rumahAdat", "Joglo");
-
-    setStringData("LudoPoly/Kota/Jawa/Jakarta/nama", "Jakarta");
-    setIntData("LudoPoly/Kota/Jawa/Jakarta/harga", 200000);
-
-    setStringData("LudoPoly/Kota/Jawa/Yogyakarta/nama", "Yogyakarta");
-    setIntData("LudoPoly/Kota/Jawa/Yogyakarta/harga", 100000);
-
-    setStringData("LudoPoly/Kota/Jawa/Bandung/nama", "Bandung");
-    setIntData("LudoPoly/Kota/Jawa/Bandung/harga", 100000);
-
-    setStringData("LudoPoly/Kota/Jawa/Surabaya/nama", "Surabaya");
-    setIntData("LudoPoly/Kota/Jawa/Surabaya/harga", 100000);
-
-
-    // PULAU SUMATERA - RUMAH GADANG
-    setStringData("LudoPoly/Kota/Sumatera/rumahAdat", "Rumah Gadang");
-
-    setStringData("LudoPoly/Kota/Sumatera/Padang/nama", "Padang");
-    setIntData("LudoPoly/Kota/Sumatera/Padang/harga", 100000);
-
-    setStringData("LudoPoly/Kota/Sumatera/Palembang/nama", "Palembang");
-    setIntData("LudoPoly/Kota/Sumatera/Palembang/harga", 100000);
-
-    setStringData("LudoPoly/Kota/Sumatera/Medan/nama", "Medan");
-    setIntData("LudoPoly/Kota/Sumatera/Medan/harga", 200000);
-
-    setStringData("LudoPoly/Kota/Sumatera/BandaAceh/nama", "Banda Aceh");
-    setIntData("LudoPoly/Kota/Sumatera/BandaAceh/harga", 100000);
-
-
-    // PULAU KALIMANTAN - RUMAH BETANG
-    setStringData("LudoPoly/Kota/Kalimantan/rumahAdat", "Rumah Betang");
-
-    setStringData("LudoPoly/Kota/Kalimantan/PalangkaRaya/nama", "Palangka Raya");
-    setIntData("LudoPoly/Kota/Kalimantan/PalangkaRaya/harga", 100000);
-
-    setStringData("LudoPoly/Kota/Kalimantan/Samarinda/nama", "Samarinda");
-    setIntData("LudoPoly/Kota/Kalimantan/Samarinda/harga", 100000);
-
-    setStringData("LudoPoly/Kota/Kalimantan/Pontianak/nama", "Pontianak");
-    setIntData("LudoPoly/Kota/Kalimantan/Pontianak/harga", 200000);
-
-    setStringData("LudoPoly/Kota/Kalimantan/Banjarmasin/nama", "Banjarmasin");
-    setIntData("LudoPoly/Kota/Kalimantan/Banjarmasin/harga", 100000);
-
-
-    // PULAU SULAWESI - RUMAH TONGKONAN
-    setStringData("LudoPoly/Kota/Sulawesi/rumahAdat", "Tongkonan");
-
-    setStringData("LudoPoly/Kota/Sulawesi/Manado/nama", "Manado");
-    setIntData("LudoPoly/Kota/Sulawesi/Manado/harga", 100000);
-
-    setStringData("LudoPoly/Kota/Sulawesi/Palu/nama", "Palu");
-    setIntData("LudoPoly/Kota/Sulawesi/Palu/harga", 100000);
-
-    setStringData("LudoPoly/Kota/Sulawesi/Kendari/nama", "Kendari");
-    setIntData("LudoPoly/Kota/Sulawesi/Kendari/harga", 100000);
-
-    setStringData("LudoPoly/Kota/Sulawesi/Makassar/nama", "Makassar");
-    setIntData("LudoPoly/Kota/Sulawesi/Makassar/harga", 200000);
-
-
-    // PULAU PAPUA - RUMAH HONAI
-    setStringData("LudoPoly/Kota/Papua/rumahAdat", "Honai");
-
-    setStringData("LudoPoly/Kota/Papua/Merauke/nama", "Merauke");
-    setIntData("LudoPoly/Kota/Papua/Merauke/harga", 100000);
-
-    setStringData("LudoPoly/Kota/Papua/Jayapura/nama", "Jayapura");
-    setIntData("LudoPoly/Kota/Papua/Jayapura/harga", 200000);
-
-    setStringData("LudoPoly/Kota/Papua/Sorong/nama", "Sorong");
-    setIntData("LudoPoly/Kota/Papua/Sorong/harga", 100000);
-
-    setStringData("LudoPoly/Kota/Papua/Biak/nama", "Biak");
-    setIntData("LudoPoly/Kota/Papua/Biak/harga", 100000);
-
-    Serial.println("Data pulau dan kota selesai dikirim.");
+    Serial.println("Pengiriman data awal selesai.");
 }
-
-// =====================================
-// DATA PETAK KHUSUS
-// =====================================
-
-void kirimDataPetakKhusus() {
-    Serial.println();
-    Serial.println("Mengirim data petak khusus...");
-
-    setStringData(
-        "LudoPoly/PetakKhusus/Kuis/nama",
-        "Ada Apa, Indonesia?"
-    );
-    setStringData(
-        "LudoPoly/PetakKhusus/Kuis/status",
-        "aktif"
-    );
-
-    setStringData(
-        "LudoPoly/PetakKhusus/DanaWarga/nama",
-        "Dana Warga"
-    );
-    setStringData(
-        "LudoPoly/PetakKhusus/DanaWarga/status",
-        "aktif"
-    );
-
-    setStringData(
-        "LudoPoly/PetakKhusus/Pajak/nama",
-        "Pajak"
-    );
-    setStringData(
-        "LudoPoly/PetakKhusus/Pajak/status",
-        "aktif"
-    );
-
-    setStringData(
-        "LudoPoly/PetakKhusus/JalurGaib/nama",
-        "Jalur Gaib"
-    );
-    setStringData(
-        "LudoPoly/PetakKhusus/JalurGaib/status",
-        "aktif"
-    );
-
-    setStringData(
-        "LudoPoly/PetakKhusus/LaluLintas/nama",
-        "Lalu Lintas"
-    );
-    setStringData(
-        "LudoPoly/PetakKhusus/LaluLintas/status",
-        "aktif"
-    );
-
-    Serial.println("Data petak khusus selesai dikirim.");
-}
-
-// =====================================
-// UPDATE STATUS PERANGKAT
-// =====================================
 
 void perbaruiStatus() {
+    Serial.println();
+    Serial.println("Memperbarui status perangkat...");
+
     int responseCode = fb.setString(
         "LudoPoly/IoT/deviceStatus",
         "online"
     );
 
-    cekResponse("Update Device Status", responseCode);
+    tampilkanHasil("Update Device Status", responseCode);
 }
 
-// =====================================
-// FUNGSI FIREBASE
-// =====================================
+void tampilkanHasil(String namaData, int responseCode) {
+    Serial.print(namaData);
+    Serial.print(" - Response Code: ");
+    Serial.println(responseCode);
 
-void setStringData(String path, String nilai) {
-    int responseCode = fb.setString(path, nilai);
-    cekResponse(path, responseCode);
-}
-
-void setIntData(String path, int nilai) {
-    int responseCode = fb.setInt(path, nilai);
-    cekResponse(path, responseCode);
-}
-
-void cekResponse(String nama, int kode) {
-    Serial.print(nama);
-    Serial.print(" | Response Code: ");
-    Serial.println(kode);
-
-    if (kode == 200) {
-        Serial.println("Berhasil dikirim.");
+    if (responseCode == 200) {
+        Serial.println("Data berhasil dikirim.");
     } else {
-        Serial.println("Gagal dikirim. Periksa konfigurasi Firebase.");
+        Serial.println("Pengiriman data gagal.");
+        Serial.println("Periksa URL, koneksi, dan aturan Firebase.");
     }
 }
